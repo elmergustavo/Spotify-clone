@@ -1,8 +1,8 @@
 <div class="tracks-page">
     <!--section top (small)-->
-    <app-section-generic>
+    <app-section-generic [dataTracks]="mockTrackList" [mode]="'small'" [title]="'¡La mejor música del mundo!'">
     </app-section-generic>
     <!--section medium (big)-->
-    <app-section-generic>
+    <app-section-generic [mode]="'big'" [dataTracks]="mockTrackList" [title]="'Lo mejor de Electronica'">
     </app-section-generic>
 </div>
