@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistoryTracksComponent } from './history-tracks.component';
+import { TracksPageComponent } from './tracks-page.component';
 
-describe('HistoryTracksComponent', () => {
-  let component: HistoryTracksComponent;
-  let fixture: ComponentFixture<HistoryTracksComponent>;
+describe('TracksPageComponent', () => {
+  let component: TracksPageComponent;
+  let fixture: ComponentFixture<TracksPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HistoryTracksComponent ]
+      declarations: [ TracksPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HistoryTracksComponent);
+    fixture = TestBed.createComponent(TracksPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

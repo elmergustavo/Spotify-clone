@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TracksRoutingModule } from './tracks-routing.module';
-import { HistoryTracksComponent } from './pages/history-tracks/history-tracks.component';
+import { TracksPageComponent } from './pages/tracks-page/tracks-page.component';
+
 
 
 @NgModule({
   declarations: [
-    HistoryTracksComponent
+    TracksPageComponent
   ],
   imports: [
     CommonModule,
