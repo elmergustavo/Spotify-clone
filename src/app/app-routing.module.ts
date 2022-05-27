@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '', // TODO: Localhost:
     loadChildren:() => import(`./modules/home/home.module`).then(m => m.HomeModule)
+  }, 
+  {
+    path: '', // TODO: Localhost:
+    loadChildren:() => import(`./modules/home/home.module`).then(m => m.HomeModule)
   }
 ];
 
