@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true, // poder importar jso en nuestro components
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -18,6 +19,17 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      "@core/*":[
+        "src/app/core/*"
+      ],
+      "@modules/*":[
+        "src/app/modules/*"
+      ],
+      "@shared/*":[
+        "src/app/shared/*"
+      ],
+    },
     "lib": [
       "es2020",
       "dom"
