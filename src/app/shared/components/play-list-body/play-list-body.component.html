@@ -1,1 +1,36 @@
-<p>play-list-body works!</p>
+<div class="play-list-body">
+    <ul class="play-list-table-header">
+        <li>Nombre ❤</li>
+        <li>álbum 🆗</li>
+        <li>fecha incorporación 🍌😁</li>
+        <li><i class="uil uil-clock-eight"></i></li>
+    </ul>
+    <ul class="play-list-rows" *ngFor="let track of tracks">
+        <li class="track-name">
+            <ng-container *ngTemplateOutlet="coverSection;context:{track:track}"></ng-container>
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+
+    </ul>
+</div>
+
+<!--template del cover-->
+<ng-template #coverSection let-track="track">
+
+    <div class="cover-section">
+        <img appImgBroken class="cover-track" [src]="track.cover" [alt]="track.name">
+        <div class="cover-info">
+            <div class="name-track">{{track.name}}</div>
+            <div class="name-track-details">{{track.artist.name}}</div>
+        </div>
+    </div>
+
+</ng-template>
