@@ -24,7 +24,7 @@
         <div class="sub-title-track">{{track.name}}</div>
     </div>
     <div class="buttons-player">
-        <button  *ngIf="true" class="play-btn">
+        <button (click)="sendPlay(track)"  *ngIf="true" class="play-btn">
             <i class="uil " [ngClass]="{'uil-play':true}"></i>
         </button>
         <button *ngIf="false" class="play-btn">
